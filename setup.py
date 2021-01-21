@@ -13,7 +13,7 @@ test_requirements = ['pytest>=3', ]
 
 setup(
     author="Matthew Larsen",
-    author_email='matt.larsen@connorgp.com',
+    author_email='Matt Larsen <matt.larsen@connorgp.com>',
     python_requires='>=3.6',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
@@ -31,11 +31,11 @@ setup(
     long_description=readme,
     include_package_data=True,
     keywords='nagios plugin',
-    name='matt-larsen-sld_nagios_plugin',
+    name='sld.nagios_plugin',
     packages=find_packages(include=['nagios_plugin', 'nagios_plugin.*']),
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/matt-larsen-sld/',
+    url='https://github.com/SoldenServices/python-nagios-plugin',
     version='0.0.2',
     zip_safe=False,
 )
