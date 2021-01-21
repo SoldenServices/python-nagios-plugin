@@ -37,16 +37,13 @@ def test_plugin_return_unknown_return_code():
 
 
 example_message_and_perf_data = [
-        (None, None, ""),
-        ("test 123", None, "test 123"),
-        ("test 123", "/=2643MB;5986;0;5986;", "test 123 | /=2643MB;5986;0;5986;"),
-    ]
+    (None, None, ""),
+    ("test 123", None, "test 123"),
+    ("test 123", "/=2643MB;5986;0;5986;", "test 123 | /=2643MB;5986;0;5986;"),
+]
 
 
-@pytest.mark.parametrize(
-    "message, perf_data, expected",
-    example_message_and_perf_data
-)
+@pytest.mark.parametrize("message, perf_data, expected", example_message_and_perf_data)
 def test_plugin_std_out_of_str(capsys, message, perf_data, expected):
     with pytest.raises(SystemExit) as _:
         plugin = Plugin()
@@ -55,10 +52,7 @@ def test_plugin_std_out_of_str(capsys, message, perf_data, expected):
     assert captured.out.rstrip() == expected
 
 
-@pytest.mark.parametrize(
-    "message, perf_data, expected",
-    example_message_and_perf_data
-)
+@pytest.mark.parametrize("message, perf_data, expected", example_message_and_perf_data)
 def test_get_plugin_output(message, perf_data, expected):
     output_data = get_plugin_output(message, perf_data)
     assert output_data == expected
