@@ -5,7 +5,7 @@ Library facilitate implementing the Nagios Core Plugin API with custom Nagios pl
 ## Installation
 
 ```
-pip install nagios_plugin
+pip install sld.nagios_plugin
 ```
 
 ## Usage 
