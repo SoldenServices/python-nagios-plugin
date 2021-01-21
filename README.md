@@ -1,6 +1,6 @@
 # Nagios Plugin Tool
 
-Library facilitate implementing the Nagios Core Plugin API with custom Nagios plugins
+Library to facilitate implementing the Nagios Core Plugin API with custom Nagios plugins
 
 ## Installation
 
