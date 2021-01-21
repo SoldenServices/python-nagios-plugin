@@ -4,7 +4,7 @@
 
 from setuptools import setup, find_packages
 
-with open('README.rst') as readme_file:
+with open('README.md') as readme_file:
     readme = readme_file.read()
 
 requirements = [ ]
@@ -30,7 +30,7 @@ setup(
     license="MIT license",
     long_description=readme,
     include_package_data=True,
-    keywords='nagios_plugin',
+    keywords='nagios plugin',
     name='matt-larsen-sld_nagios_plugin',
     packages=find_packages(include=['nagios_plugin', 'nagios_plugin.*']),
     test_suite='tests',
