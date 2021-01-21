@@ -23,4 +23,4 @@ plugin.return_ok(message="OK", perf_data="/=123;0;")
 
 
 ---
-Version: Version: 0.0.2
+Version: 0.0.2
